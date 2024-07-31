@@ -3,7 +3,7 @@
 # https://contentwise.tech
 # MIT License
 
-CORES=`grep 'cpu cores' /proc/cpuinfo | uniq`
+CORES=`grep 'cpu cores' /proc/cpuinfo | uniq | awk '{print $NF}'`
 
 date > $1
 echo Default test on all cores for 1 minute

@@ -10,3 +10,4 @@
 ./nench.sh
 ./osbench.sh
 ./ipc-bench.sh
+./stress-ng.sh
